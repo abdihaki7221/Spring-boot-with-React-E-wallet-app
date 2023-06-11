@@ -1,0 +1,82 @@
+.app-container {
+  display: flex;
+  font-family: 'Public Sans', sans-serif;
+  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+}
+.register-container{
+  height: 100vh;
+}
+/* .register{
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+} */
+.logo{
+  width: 220px;
+  height:220px ;
+  border-radius: 20%;
+  background-color: cornflowerblue;
+
+}
+.col-register{
+  height:  90vh;
+  position: relative;
+  border-radius: 8px;
+  background-color: lavender;
+}
+
+.row-register{
+
+ height:  100vh;
+ justify-content: start;
+ align-items: center;
+
+}
+.register-column{
+  min-width: 0;
+}
+
+.registration-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.other-component-container {
+  display: none; /* Hide the container by default on all devices */
+}
+
+@media (min-width: 768px) {
+  /* Show the container on devices with a minimum width of 768px (small devices and above) */
+  .other-component-container {
+    flex: 1;
+    background-image: url(public/sides.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .other-component-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+    opacity: 0.5;
+  }
+
+  .other-component-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
